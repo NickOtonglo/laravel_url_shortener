@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover, nav .icon:hover {
+    color: #111;
+}
+
+nav {
+    padding: 12px 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .icon {
+    font-size: 2rem;
+    color: #555;
+}
+
+nav .icon:hover {
+    cursor: pointer;
+}
+
+form {
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 4px;
+    max-width: 800px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 50px;
+}
+
+form input[type=submit],
+form button {
+  padding: 10px;
+  background-color: #5a5a5a;
+  color: #fff;
+  border-radius: 5px;
+  border-width: 0;
+  margin: 5px auto;
+  cursor: pointer;
+  font-family: "Roboto", serif;
+}
+
+form input, form textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: "Roboto", serif;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0;
+}
+
+.url {
+    padding: 8px 0;
+}
+
+.text-centre {
+    text-align: center;
+}
