@@ -82,11 +82,12 @@ class UrlController extends Controller
     }
 
     public function redirect($randomString){
-        $data = Url::where('hash', $randomString)->first();
+        $data = Url::where('short_url', env('APP_URL').'/'.$randomString)->first();
     
         if (!$data) {
             return redirect('/')->with('error', 'URL not found');
         }
+
     
         return redirect($data->original_url);
     }
